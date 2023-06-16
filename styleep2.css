@@ -1,0 +1,81 @@
+body {
+    font-size: 16px;
+  }
+  
+  .u-sheet-1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .u-custom-font {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .u-notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .u-note {
+    width: 200px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .u-note-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .u-note-link:hover {
+    color: #3367d6;
+  }
+  .u-professor {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .u-professor-image {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .u-special-thanks {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .u-professor-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  .u-footer .u-social-icons-1 {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .u-footer .u-line-1 {
+    margin: 20px auto;
+  }
+  
+  @media (max-width: 1199px) {
+    .u-footer .u-social-icons-1 {
+      margin-left: 0;
+    }
+  }
+  
