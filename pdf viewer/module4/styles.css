@@ -62,3 +62,6 @@ body {
     padding: 10px;
     text-align: center;
   }
+  .blank-line {
+    margin-bottom: 50px; /* Adjust the value to increase or decrease spacing */
+  }
