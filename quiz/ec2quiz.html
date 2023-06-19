@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EC-2 QUIZ</title>
+    <style>
+        body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.options input[type="radio"] {
+  margin-right: 5px;
+}
+
+.submit-btn {
+  display: block;
+  margin-top: 30px;
+  background-color: #009838;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff6f6;
+  border: 1px solid #666;
+}
+
+.result h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.result p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.result h3 {
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.leaderboard {
+  margin-top: 40px;
+}
+
+.leaderboard h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #666;
+}
+
+th {
+  background-color: #555;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>EC-2 QUIZ</h1>
+        <h1>ENGINEERING CHRONICLES</h1>
+
+        <div class="quiz">
+            <form id="quizForm">
+                <div class="question">
+                    <p>1. What is spectroscopy?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> a) Spectroscopy is the study of supernatural phenomena and the interaction between ethereal entities.</label>
+                        <label><input type="radio" name="q1" value="b"> b) Spectroscopy is a method of predicting future events through the analysis of celestial bodies.</label>
+                        <label><input type="radio" name="q1" value="c"> c) Spectroscopy is the study of the interaction between electromagnetic waves and matter.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>2. What are the advantages of spectroscopic techniques over classical techniques?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="a"> a) Spectroscopic techniques require large sample amounts, making them less suitable for analysis.</label>
+                        <label><input type="radio" name="q2" value="b"> b) Spectroscopic techniques provide inaccurate results and lack reliability compared to classical techniques.</label>
+                        <label><input type="radio" name="q2" value="c"> c) Spectroscopic techniques are time-efficient, require small sample amounts, are non-destructive, provide reliable results, and record information in a permanent chart.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>3. What are the two main types of spectroscopy?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="a"> a) The two main types of spectroscopy are atomic spectroscopy and nuclear spectroscopy.</label>
+                        <label><input type="radio" name="q3" value="b"> b) The two main types of spectroscopy are infrared spectroscopy and ultraviolet spectroscopy.</label>
+                        <label><input type="radio" name="q3" value="c"> c) The two main types of spectroscopy are absorption spectroscopy and reflection spectroscopy.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>4. What is the electromagnetic spectrum?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> a) The electromagnetic spectrum is the range of all types of mechanical waves.</label>
+                        <label><input type="radio" name="q4" value="b"> b) The electromagnetic spectrum is the range of all types of electromagnetic radiation.</label>
+                        <label><input type="radio" name="q4" value="c"> c) The electromagnetic spectrum is the range of all types of gravitational waves.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>5. What are the basic selection rules for electronic transitions?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="a"> a) Δs = 0 and Δl = 0</label>
+                        <label><input type="radio" name="q5" value="b"> b) Δs = 0 and Δl = ±1</label>
+                        <label><input type="radio" name="q5" value="c"> c) Δs = ±1 and Δl = ±1</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>6. What are selection rules in spectroscopy?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q6" value="a"> a) Selection rules are rules that determine which spectroscopic technique to use for a particular analysis.</label>
+                        <label><input type="radio" name="q6" value="b"> b) Selection rules are rules that determine which samples are suitable for spectroscopic analysis.</label>
+                        <label><input type="radio" name="q6" value="c"> c) Selection rules are a set of rules in quantum mechanics that determine which transitions are allowed or forbidden in a spectroscopic process based on conservation laws such as angular momentum and parity.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>7. What is Raman spectroscopy?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q7" value="a"> a) Raman spectroscopy is a technique that measures the absorption of light by a sample.</label>
+                        <label><input type="radio" name="q7" value="b"> b) Raman spectroscopy is a technique that measures the reflection of light by a sample.</label>
+                        <label><input type="radio" name="q7" value="c"> c) Raman spectroscopy is a technique that measures the scattering of light by a sample.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>8. What is the basis of emission spectroscopy?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q8" value="a"> a) The absorption of radiation from the ground state to the excited state.</label>
+                        <label><input type="radio" name="q8" value="b"> b) The emission of radiation from the excited state to the ground state.</label>
+                        <label><input type="radio" name="q8" value="c"> c) The scattering of radiation by the sample.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>9. What is the Standard Hydrogen Electrode (SHE)?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q9" value="a"> a) An electrode that is used as a reference for measuring the potential of other electrodes.</label>
+                        <label><input type="radio" name="q9" value="b"> b) An electrode that is used to measure the pH of a solution.</label>
+                        <label><input type="radio" name="q9" value="c"> c) An electrode that is used to calculate the concentration of reactants in a solution.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>10. What is a redox reaction?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q10" value="a"> a) A reaction where electrons are gained.</label>
+                        <label><input type="radio" name="q10" value="b"> b) A reaction where electrons are lost.</label>
+                        <label><input type="radio" name="q10" value="c"> c) A reaction where both electrons are gained and lost.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>11. What is trans esterification?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q11" value="a"> a) A reaction that involves the displacement of alcohol from an ester by another alcohol.</label>
+                        <label><input type="radio" name="q11" value="b"> b) A reaction that involves the synthesis of biodiesel from vegetable oils.</label>
+                        <label><input type="radio" name="q11" value="c"> c) A reaction that involves the reduction of alkenes to alkanes.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>12. What is the principle of using catalysts instead of stoichiometric reagents in Green Chemistry?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q12" value="a"> a) The principle that focuses on the maximum use of starting materials in a chemical reaction.</label>
+                        <label><input type="radio" name="q12" value="b"> b) The principle that emphasizes the use of renewable feedstocks in chemical production.</label>
+                        <label><input type="radio" name="q12" value="c"> c) The principle that catalysts are used in small amounts and can carry out a single reaction many times, unlike stoichiometric reagents.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>13. What is biodiesel?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q13" value="a"> a) A type of fuel made from petroleum.</label>
+                        <label><input type="radio" name="q13" value="b"> b) A type of fuel distilled from plants and animal materials.</label>
+                        <label><input type="radio" name="q13" value="c"> c) A type of fuel made from natural gas.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>14. What are the characteristics of an ideal fuel?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q14" value="a"> a) High moisture content and low ignition temperature.</label>
+                        <label><input type="radio" name="q14" value="b"> b) Low calorific value and high non-combustible matter.</label>
+                        <label><input type="radio" name="q14" value="c"> c) High calorific value and low moisture content.</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>15. What is a catalytic converter?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q15" value="a"> a) An electrode that is used to measure the pH of a solution.</label>
+                        <label><input type="radio" name="q15" value="b"> b) An electrode that is used as a reference for measuring the potential of other electrodes.</label>
+                        <label><input type="radio" name="q15" value="c"> c) A device that is fitted in the exhaust system of petrol-driven vehicles to reduce harmful emissions.</label>
+                    </div>
+                </div>
+                <input type="text" id="nameInput" placeholder="Enter your name" required>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div class="result" style="display: none;">
+            <h2>Quiz Result</h2>
+            <p id="resultText"></p>
+            <h3>Correct Answers:</h3>
+            <ul id="correctAnswers"></ul>
+            <h3>Incorrect Answers:</h3>
+            <ul id="incorrectAnswers"></ul>
+        </div>
+
+        <div class="leaderboard" style="display: none;">
+            <h2>Leaderboard</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+    // Store quiz data
+const quizData = [
+  {
+    question: "1. What is spectroscopy?",
+    options: ["a) Spectroscopy is the study of supernatural phenomena and the interaction between ethereal entities.", "b) Spectroscopy is a method of predicting future events through the analysis of celestial bodies.", "c) Spectroscopy is the study of the interaction between electromagnetic waves and matter."],
+    answer: "c",
+  },
+  {
+    question: "2. What are the advantages of spectroscopic techniques over classical techniques?",
+    options: ["a) Spectroscopic techniques require large sample amounts, making them less suitable for analysis.", "b) Spectroscopic techniques provide inaccurate results and lack reliability compared to classical techniques.", "c) Spectroscopic techniques are time-efficient, require small sample amounts, are non-destructive, provide reliable results, and record information in a permanent chart."],
+    answer: "c",
+  },
+  {
+    question: "3. What are the two main types of spectroscopy?",
+    options: ["a) The two main types of spectroscopy are atomic spectroscopy and nuclear spectroscopy.", "b) The two main types of spectroscopy are infrared spectroscopy and ultraviolet spectroscopy.", "c) The two main types of spectroscopy are absorption spectroscopy and reflection spectroscopy."],
+    answer: "a",
+  },
+  {
+    question: "4. What is the electromagnetic spectrum?",
+    options: ["a) The electromagnetic spectrum is the range of all types of mechanical waves.", "b) The electromagnetic spectrum is the range of all types of electromagnetic radiation.", "c) The electromagnetic spectrum is the range of all types of gravitational waves."],
+    answer: "b",
+  },
+  {
+    question: "5. What are the basic selection rules for electronic transitions?",
+    options: ["a) Δs = 0 and Δl = 0","b) Δs = 0 and Δl = ±1","c) Δs = ±1 and Δl = ±1"],
+    answer: "b",
+  },
+  {
+    question: "6. What are selection rules in spectroscopy?",
+    options: ["a) Selection rules are rules that determine which spectroscopic technique to use for a particular analysis.","b) Selection rules are rules that determine which samples are suitable for spectroscopic analysis.","c) Selection rules are a set of rules in quantum mechanics that determine which transitions are allowed or forbidden in a spectroscopic process based on conservation laws such as angular momentum and parity."],
+    answer: "c",
+  },
+  {
+    question: "7. What is Raman spectroscopy?",
+    options: ["a) Raman spectroscopy is a technique that measures the absorption of light by a sample.","b) Raman spectroscopy is a technique that measures the reflection of light by a sample.","c) Raman spectroscopy is a technique that measures the scattering of light by a sample."],
+    answer: "c",
+  },
+  {
+    question: "8. What is the basis of emission spectroscopy?",
+    options: ["a) The absorption of radiation from the ground state to the excited state.","b) The emission of radiation from the excited state to the ground state.","c) The scattering of radiation by the sample."],
+    answer: "b",
+  },
+  {
+    question: "9. What is the Standard Hydrogen Electrode (SHE)?",
+    options: ["a) An electrode that is used as a reference for measuring the potential of other electrodes.","b) An electrode that is used to measure the pH of a solution.","c) An electrode that is used to calculate the concentration of reactants in a solution."],
+    answer: "a",
+  },
+  {
+    question: "10. What is a redox reaction?",
+    options: ["a) A reaction where electrons are gained.","b) A reaction where electrons are lost.","c) A reaction where both electrons are gained and lost."],
+    answer: "c",
+  },
+  {
+    question: "11. What is trans esterification?",
+    options: ["a) A reaction that involves the displacement of alcohol from an ester by another alcohol.","b) A reaction that involves the synthesis of biodiesel from vegetable oils.","c) A reaction that involves the reduction of alkenes to alkanes."],
+    answer: "a",
+  },
+  {
+    question: "12. What is the principle of using catalysts instead of stoichiometric reagents in Green Chemistry?",
+    options: ["a) The principle that focuses on the maximum use of starting materials in a chemical reaction.","b) The principle that emphasizes the use of renewable feedstocks in chemical production.","c) The principle that catalysts are used in small amounts and can carry out a single reaction many times, unlike stoichiometric reagents."],
+    answer: "c",
+  },
+  {
+    question: "13. What is biodiesel?",
+    options: ["a) A type of fuel made from petroleum.","b) A type of fuel distilled from plants and animal materials.","c) A type of fuel made from natural gas."],
+    answer: "b",
+  },
+  {
+    question: "14. What are the characteristics of an ideal fuel?",
+    options: ["a) High moisture content and low ignition temperature.","b) Low calorific value and high non-combustible matter.","c) High calorific value and low moisture content."],
+    answer: "c",
+  },
+  {
+    question: "15. What is a catalytic converter?",
+    options: ["a) An electrode that is used to measure the pH of a solution.","b) An electrode that is used as a reference for measuring the potential of other electrodes.","c) A device that is fitted in the exhaust system of petrol-driven vehicles to reduce harmful emissions."],
+    answer: "c",
+  },
+  /*
+  {
+    question: "#",
+    options: ["a) #","b) #","c) #"],
+    answer: "b",
+  },
+  */
+];
+
+// Get quiz form and result elements
+const quizForm = document.getElementById("quizForm");
+const resultElement = document.querySelector(".result");
+const resultTextElement = document.getElementById("resultText");
+const correctAnswersElement = document.getElementById("correctAnswers");
+const incorrectAnswersElement = document.getElementById("incorrectAnswers");
+
+// Quiz submission handler
+quizForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const nameInput = document.getElementById("nameInput");
+  const name = nameInput.value.trim();
+
+  if (name === "") {
+    alert("Please enter your name.");
+    return;
+  }
+
+  // Calculate quiz score
+  let score = 0;
+  const userAnswers = {};
+
+  quizData.forEach((question, index) => {
+    const selectedOption = document.querySelector(`input[name="q${index + 1}"]:checked`);
+
+    if (selectedOption) {
+      const answer = selectedOption.value;
+      userAnswers[index + 1] = answer;
+
+      if (answer === question.answer) {
+        score++;
+      }
+    } else {
+      userAnswers[index + 1] = "";
+    }
+  });
+
+  // Display quiz result
+  const totalQuestions = quizData.length;
+  const percentage = (score / totalQuestions) * 100;
+  resultTextElement.textContent = `${name}, you scored ${score} out of ${totalQuestions} (${percentage.toFixed(2)}%)`;
+
+  // Display compliments based on percentage
+  let compliment = "";
+
+if (percentage === 100) {
+  compliment = "Amazing! You got a perfect score. Well done!";
+} else if (percentage >= 90) {
+  compliment = "Wow! You've got an exceptional understanding of the quiz topics.";
+} else if (percentage >= 80) {
+  compliment = "Great job! You have a solid knowledge of the quiz topics.";
+} else if (percentage >= 70) {
+  compliment = "Well done! You're doing a fantastic job!";
+} else if (percentage >= 60) {
+  compliment = "Good effort! You're on the right track. Keep it up!";
+} else {
+  compliment = "Don't worry, practice makes perfect. Keep learning and improving!";
+}
+
+const complimentElement = document.createElement("p");
+complimentElement.textContent = compliment;
+resultTextElement.appendChild(complimentElement);
+
+
+  // Display correct and incorrect answers
+  correctAnswersElement.innerHTML = "";
+  incorrectAnswersElement.innerHTML = "";
+
+  Object.entries(userAnswers).forEach(([questionNumber, answer]) => {
+    const questionIndex = parseInt(questionNumber) - 1;
+    const question = quizData[questionIndex];
+
+    const li = document.createElement("li");
+    li.textContent = question.question;
+
+    if (answer === question.answer) {
+      li.style.color = "green";
+      correctAnswersElement.appendChild(li);
+    } else {
+      const correctOption = question.options.find((option) => option.startsWith(question.answer));
+      const incorrectOption = question.options.find((option) => option.startsWith(answer));
+      li.innerHTML = `${question.question}<br><strong>Your answer:</strong> ${incorrectOption}<br><strong>Correct answer:</strong> ${correctOption}`;
+      li.style.color = "red";
+      incorrectAnswersElement.appendChild(li);
+    }
+  });
+
+  // Display result and leaderboard
+  resultElement.style.display = "block";
+  leaderboardElement.style.display = "block";
+  addScoreToLeaderboard(name, score);
+});
+
+// Sample leaderboard data (mocked)
+const leaderboardData = [
+  { name: "John", score: 4 },
+  { name: "Jane", score: 3 },
+  { name: "Mark", score: 5 },
+];
+
+// Get leaderboard table body element
+const leaderboardTableBody = document.getElementById("leaderboardTableBody");
+
+// Function to add score to leaderboard
+function addScoreToLeaderboard(name, score) {
+  leaderboardData.push({ name, score });
+
+  // Sort leaderboard data based on score
+  leaderboardData.sort((a, b) => b.score - a.score);
+
+  // Clear existing rows
+  leaderboardTableBody.innerHTML = "";
+
+  // Add rows to leaderboard table
+  leaderboardData.forEach((data, index) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `<td>${data.name}</td><td>${data.score}</td>`;
+    leaderboardTableBody.appendChild(row);
+  });
+}
+
+    </script>
+</body>
+</html>
