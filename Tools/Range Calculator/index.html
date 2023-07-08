@@ -26,9 +26,80 @@
       <button type="submit">Calculate</button>
     </form>
 
-    <div id="results"> <h2>Results</h2> <div id="resultValues"> <p id="timeToMaxElevation"></p> <p id="totalFlightTime"></p> <p id="maxElevation"></p> <p id="flightDistance"></p> </div>
+    <div id="results">
+  <h2>Results</h2>
+  <div id="resultValues">
+    <p id="timeToMaxElevation"></p>
+    <p id="totalFlightTime"></p>
+    <p id="maxElevation"></p>
+    <p id="flightDistance"></p>
+  </div>
     <div id="chartContainer">
   <canvas id="chartCanvas"></canvas>
+</div>
+<div id="additionalInfo">
+  <img src="./diagram.png" alt="Additional Image">
+  <h1>Projectile Motion Formulas</h1>
+
+  <h2>Time to Reach Maximum Height</h2>
+  <p>
+    The time for a projectile - a bullet, a ball, or a stone, or something similar - thrown out with an angle Θ to the horizontal plane - to reach the maximum height can be calculated as:
+  </p>
+  <p>
+    th = vi * sin(Θ) / ag &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)
+  </p>
+  <p>
+    where:
+  </p>
+  <ul>
+    <li>th = time to reach maximum height (s)</li>
+    <li>vi = initial velocity of the projectile (m/s, ft/s)</li>
+    <li>Θ = the initial angle of the velocity vector to the horizontal plane (degrees)</li>
+    <li>ag = acceleration of gravity (9.81 m/s<sup>2</sup>, 32.174 ft/s<sup>2</sup>)</li>
+  </ul>
+
+  <h2>Total Flight Time</h2>
+  <p>
+    The total flight time can be expressed as:
+  </p>
+  <p>
+    ts = 2 * th &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)
+  </p>
+  <p>
+    where:
+  </p>
+  <ul>
+    <li>ts = time for the total flight (s)</li>
+  </ul>
+
+  <h2>Maximum Elevation</h2>
+  <p>
+    The maximum elevation (h) of the flight can be calculated as:
+  </p>
+  <p>
+    h = 1/2 * ag * th<sup>2</sup> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)
+  </p>
+  <p>
+    where:
+  </p>
+  <ul>
+    <li>h = flight maximum elevation (m, ft)</li>
+  </ul>
+
+  <h2>Horizontal Distance of the Flight</h2>
+  <p>
+    The horizontal distance of the flight can be expressed as:
+  </p>
+  <p>
+    s = vi<sup>2</sup> * sin(2Θ) / ag &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4)
+  </p>
+  <p>
+    where:
+  </p>
+  <ul>
+    <li>s = flight distance (m, ft)</li>
+  </ul>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 </div>
 
 

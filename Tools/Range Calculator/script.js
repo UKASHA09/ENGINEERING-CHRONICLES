@@ -2,6 +2,7 @@
 const calculatorForm = document.getElementById('calculatorForm');
 const resultsSection = document.getElementById('results');
 const resultValues = document.getElementById('resultValues');
+const additionalInfo = document.getElementById('additionalInfo');
 
 // ...
 
@@ -18,6 +19,7 @@ calculatorForm.addEventListener('submit', function(event) {
   flightDistance.textContent = `Flight distance (m): ${flightDist.toFixed(2)}`;
 
   resultsSection.style.display = 'block'; // Show the results section
+  additionalInfo.style.display = 'block'; // Show the additional info section
 });
 
 // ...
