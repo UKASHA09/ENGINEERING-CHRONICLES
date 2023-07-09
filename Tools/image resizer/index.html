@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Resizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ENGINEERING CHRONICLES</h1>
+        <h1>Image Resizer</h1>
+        <div class="drop-area">
+            <p id="drop-text">Select Image or Drop Here</p>
+            <input type="file" id="upload" accept="image/*">
+        </div>
+        <div id="resize-options">
+            <label>
+                <input type="radio" name="resize" value="10">
+                10% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="20">
+                20% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="30">
+                30% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="40">
+                40% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="50" checked>
+                50% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="60">
+                60% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="70">
+                70% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="80">
+                80% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="90">
+                90% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="100">
+                100% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="110">
+                110% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="120">
+                120% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="125">
+                125% Size
+            </label>
+            <label>
+                <input type="radio" name="resize" value="custom">
+                Custom Size:
+                <input type="number" id="width-input" placeholder="Width" min="1">
+                x
+                <input type="number" id="height-input" placeholder="Height" min="1">
+            </label>
+        </div>
+        <div id="image-preview-container">
+            <canvas id="canvas"></canvas>
+            <img id="output">
+        </div>
+        <a id="download-btn" download="resized_image.jpg" disabled>Download Converted Image</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
