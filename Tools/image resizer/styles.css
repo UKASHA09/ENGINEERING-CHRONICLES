@@ -151,7 +151,14 @@ label input[type="radio"]:checked {
     cursor: not-allowed;
 }
 
-
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
 
 
 
