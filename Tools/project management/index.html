@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project Management Tool</h1>
+        <form id="taskForm">
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" required>
+            <label for="taskAssignee">Assignee:</label>
+            <input type="text" id="taskAssignee" required>
+            <label for="taskPriority">Priority:</label>
+            <select id="taskPriority" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <label for="taskDueDate">Due Date:</label>
+            <input type="date" id="taskDueDate">
+            <button type="submit">Add Task</button>
+        </form>
+        <h2>Task List:</h2>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
